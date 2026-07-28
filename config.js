@@ -6,7 +6,7 @@ window.WOHS_CONFIG = {
   contactEmail: "WOHSPlaybill@gmail.com",
 
   // Keep your normal Google Sheet link here as the backup/admin view.
-  trackerUrl: "PASTE_YOUR_NORMAL_GOOGLE_SHEET_LINK_HERE",
+  trackerUrl: "https://docs.google.com/spreadsheets/d/e/2PACX-1vRVCTX956bNCl3PPrFbIE0E5ZsiWobWDExX9rSXbGyG24hWxntvl8ZC5A4-3tPUWyCoDyq8nKt064LH/pub?gid=942913499&single=true&output=csv",
 
   // Paste the Google Sheets 'Publish to web' CSV link here.
   // Until you do, the search page will use the sample data file included in this folder.
