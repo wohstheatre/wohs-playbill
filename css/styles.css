@@ -56,3 +56,40 @@
 .footer-credit strong{
     color:#ffffff;
 }
+/* ---------- Homepage Logo Section ---------- */
+
+.hero-brand{
+  text-align:center;
+}
+
+.hero-brand img{
+  display:block;
+  width:min(100%, 420px);
+  margin:0 auto;
+  border-radius:14px;
+  box-shadow:0 18px 40px rgba(0,0,0,.28);
+}
+
+.hero-recognition{
+  margin:1.4rem 0 .6rem;
+  color:#ffffff;
+  font-size:1rem;
+  font-weight:800;
+  letter-spacing:.08em;
+  line-height:1.6;
+  text-transform:uppercase;
+}
+
+.hero-tagline{
+  margin:0;
+  color:#f4b400;
+  font-size:1.15rem;
+  font-weight:700;
+  line-height:1.5;
+}
+
+@media (max-width: 850px){
+  .hero-brand img{
+    width:min(100%, 340px);
+  }
+}
