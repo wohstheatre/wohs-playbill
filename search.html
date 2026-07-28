@@ -1,4 +1,44 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Search Businesses | WOHS Theatre</title><link rel="stylesheet" href="css/styles.css"><script defer src="js/config.js"></script><script defer src="js/app.js"></script><script defer src="js/search.js"></script></head><body>
 <header class="site-header"><div class="container header-inner"><a class="brand" href="index.html"><span class="brand-mark">🎭</span><span class="brand-text"><strong>WOHS Theatre</strong><span>Playbill Sponsorship Portal</span></span></a><button class="menu-button" aria-expanded="false">Menu</button><nav class="site-nav"><a href="index.html">Home</a><a href="search.html">Search</a><a href="sponsorships.html">Sponsorships</a><a href="contact.html">Contact</a><a href="submit.html">Submit</a><a href="resources.html">Resources</a><a href="faq.html">FAQ</a></nav></div></header>
 <main><section class="page-hero"><div class="container"><p class="eyebrow">Business tracker</p><h1>Search before you contact.</h1><p>Enter a business name or location. Results update instantly, with no spreadsheet scrolling required.</p></div></section><section class="section"><div class="container"><div class="search-panel"><label class="search-label" for="business-search">Business name or location</label><div class="search-control"><span aria-hidden="true">🔎</span><input id="business-search" type="search" placeholder="Try Publix, Foxtail, or Winter Garden" autocomplete="off"><button id="clear-search" class="clear-button" type="button" hidden>Clear</button></div><div class="filters" aria-label="Filter by status"><button class="filter-chip active" data-filter="all">All</button><button class="filter-chip" data-filter="available">Available</button><button class="filter-chip" data-filter="claimed">Claimed</button><button class="filter-chip" data-filter="purchased">Purchased</button></div><div class="results-header"><h2>Businesses</h2><span id="business-count">Loading…</span></div><div id="search-message" class="empty-message" aria-live="polite"></div><div id="business-results" class="business-results" aria-live="polite"></div></div><div class="notice" style="margin-top:22px"><strong>Can’t find the business?</strong> Try a shorter search. If it still does not appear, use the claim form and note that it is a new business.</div></div></section></main>
-<footer class="site-footer"><div class="container footer-grid"><div><strong>WOHS Theatre Playbill Sponsorships</strong><p>Search. Claim. Contact. Update. Submit.</p></div><div><a data-link="trackerUrl" href="#">Open backup Google Sheet</a></div></div></footer></body></html>
+<footer class="site-footer">
+  <div class="container">
+
+    <div class="footer-main">
+      <h3>West Orange High School Theatre</h3>
+
+      <p>
+        <a data-email-link
+           href="mailto:WOHSPlaybill@gmail.com"
+           data-config="contactEmail">
+          WOHSPlaybill@gmail.com
+        </a>
+      </p>
+
+      <p>
+        <a data-link="theatreWebsite"
+           href="https://www.wohstheatre.com">
+          Official WOHS Theatre Website
+        </a>
+      </p>
+    </div>
+
+    <hr class="footer-divider">
+
+    <div class="footer-credit">
+      <p>© 2026 West Orange High School Theatre Boosters</p>
+
+      <p>
+        Website designed and developed by
+        <a href="https://www.linkedin.com/in/ashleybedsole"
+           target="_blank"
+           rel="noopener">
+          <strong>Ashley Bedsole</strong>
+        </a><br>
+        for West Orange High School Theatre
+      </p>
+    </div>
+
+  </div>
+</footer>
+</body></html>
