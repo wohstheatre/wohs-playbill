@@ -110,3 +110,43 @@
     width:min(100%, 340px);
   }
 }
+
+/* Five-step process section */
+
+.process-section{
+  background:var(--blue-dark);
+  color:white;
+}
+
+.process-section .section-title h2{
+  color:white;
+}
+
+.process-section .section-title p{
+  color:#d9e9fb;
+}
+
+.process-section .step{
+  background:#fffaf3;
+  border-color:#f3dcc0;
+}
+
+.process-section .step strong{
+  color:var(--blue-dark);
+}
+
+.process-section .step span{
+  display:block;
+  margin-top:8px;
+  color:#526177;
+  line-height:1.5;
+}
+
+.process-section .notice{
+  background:#fff2e4;
+  color:#37475b;
+}
+
+.process-section .notice strong{
+  color:var(--blue-dark);
+}
