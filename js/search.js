@@ -81,36 +81,41 @@
     }
 
     message.hidden = true;
-    results.innerHTML = filtered.map((business) => {
-      const key = statusKey(business.status);
-      const claimAction = key === 'available'
-        ? `<a class="button button-small button-orange" data-claim-link href="#">Claim this business</a>`
-        : '';
-     const expiry =
-  business.claimedUntil && key === 'claimed'
-    ? `<p class="result-detail"><strong>Claimed until:</strong> ${escapeHtml(business.claimedUntil)}</p>`
+   results.innerHTML = filtered.map((business) => {
+  const key = statusKey(business.status);
+
+  const claimAction = key === 'available'
+    ? `<a class="button button-small button-orange" data-claim-link href="#">Claim this business</a>`
     : '';
 
-return `<article class="business-card">
-  <div class="business-card-main">
-    <div>
-      <h2>${escapeHtml(business.name)}</h2>
-      ${business.location
-        ? `<p class="location">${escapeHtml(business.location)}</p>`
-        : ''}
+  const expiry =
+    business.claimedUntil && key === 'claimed'
+      ? `<p class="result-detail"><strong>Claimed until:</strong> ${escapeHtml(business.claimedUntil)}</p>`
+      : '';
+
+  return `<article class="business-card">
+    <div class="business-card-main">
+      <div>
+        <h2>${escapeHtml(business.name)}</h2>
+        ${business.location
+          ? `<p class="location">${escapeHtml(business.location)}</p>`
+          : ''}
+      </div>
+
+      <span class="status status-${key}">
+        ${escapeHtml(business.status || 'Status unavailable')}
+      </span>
     </div>
 
-    <span class="status status-${key}">
-      ${escapeHtml(business.status || 'Status unavailable')}
-    </span>
-  </div>
+    ${expiry}
 
-  ${expiry}
-  ${business.updated
-    ? `<p class="updated">Last updated ${escapeHtml(business.updated)}</p>`
-    : ''}
-  ${claimAction}
-</article>`;
+    ${business.updated
+      ? `<p class="updated">Last updated ${escapeHtml(business.updated)}</p>`
+      : ''}
+
+    ${claimAction}
+  </article>`;
+}).join('');
 
     document.querySelectorAll('[data-claim-link]').forEach((link) => {
       const value = config.claimFormUrl;
