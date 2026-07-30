@@ -39,7 +39,7 @@
   function mapRows(rows) {
     const headers = rows[0].map(normalize);
     const find = (...names) => names.map(name => headers.indexOf(name)).find(i => i >= 0) ?? -1;
-    const name = find('business name', 'business');
+    const name = find('business name', 'business', 'name');
     const location = find('location', 'city');
     const status = find('status');
     const claimedUntil = find('claimed until', 'claim expires', 'claimed through');
