@@ -86,21 +86,31 @@
       const claimAction = key === 'available'
         ? `<a class="button button-small button-orange" data-claim-link href="#">Claim this business</a>`
         : '';
-      const expiry = business.claimedUntil && key === 'claimed'
-        ? `<p class="result-detail"><strong>Claimed until:</strong> ${escapeHtml(business.claimedUntil)}</p>` : '';
-      return `<article class="business-card">
-        <div class="business-card-main">
-          <div>
-            <h2>${escapeHtml(business.name)}</h2>
-            <p class="location">${escapeHtml(business.location || 'Location not listed')}</p>
-          </div>
-          <span class="status status-${key}">${escapeHtml(business.status || 'Status unavailable')}</span>
-        </div>
-        ${expiry}
-        ${business.updated ? `<p class="updated">Last updated ${escapeHtml(business.updated)}</p>` : ''}
-        ${claimAction}
-      </article>`;
-    }).join('');
+     const expiry =
+  business.claimedUntil && key === 'claimed'
+    ? `<p class="result-detail"><strong>Claimed until:</strong> ${escapeHtml(business.claimedUntil)}</p>`
+    : '';
+
+return `<article class="business-card">
+  <div class="business-card-main">
+    <div>
+      <h2>${escapeHtml(business.name)}</h2>
+      ${business.location
+        ? `<p class="location">${escapeHtml(business.location)}</p>`
+        : ''}
+    </div>
+
+    <span class="status status-${key}">
+      ${escapeHtml(business.status || 'Status unavailable')}
+    </span>
+  </div>
+
+  ${expiry}
+  ${business.updated
+    ? `<p class="updated">Last updated ${escapeHtml(business.updated)}</p>`
+    : ''}
+  ${claimAction}
+</article>`;
 
     document.querySelectorAll('[data-claim-link]').forEach((link) => {
       const value = config.claimFormUrl;
