@@ -10,8 +10,13 @@
     const key = el.dataset.link;
     const value = config[key];
     if (value && !String(value).startsWith('PASTE_')) {
-      el.href = value;
-    } else {
+  el.href = value;
+
+  if (/^https?:\/\//i.test(value)) {
+    el.target = '_blank';
+    el.rel = 'noopener noreferrer';
+  }
+} else {
       el.href = '#setup-needed';
       el.addEventListener('click', (event) => {
         event.preventDefault();
