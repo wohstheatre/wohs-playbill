@@ -218,3 +218,19 @@ header nav a.active {
 header nav a.active:hover {
     color: #fff !important;
 }
+/* ==========================================
+   Active Navigation Pill
+========================================== */
+
+header nav a.active {
+    background: var(--accent);
+    color: #fff !important;
+    padding: 0.45rem 0.9rem;
+    border-radius: 999px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+header nav a.active:hover {
+    color: #fff !important;
+}
