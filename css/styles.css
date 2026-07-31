@@ -207,8 +207,9 @@
 ========================================== */
 
 header nav a.active {
-    background: #dcecff;
+    background: #cfe4ff;
     color: #163b67 !important;
+    border: 1px solid #b9d8ff;
     padding: 0.45rem 0.9rem;
     border-radius: 999px;
     font-weight: 700;
@@ -217,5 +218,5 @@ header nav a.active {
 
 header nav a.active:hover {
     color: #163b67 !important;
+    background: #cfe4ff;
 }
-
