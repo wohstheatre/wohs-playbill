@@ -55,13 +55,16 @@
   }
 
   function statusKey(status) {
-    const s = normalize(status);
-    if (s.includes('available')) return 'available';
-    if (s.includes('claimed') || s.includes('follow')) return 'claimed';
-    if (s.includes('purchased') || s.includes('sold')) return 'purchased';
-    if (s.includes('declined')) return 'declined';
-    return 'other';
-  }
+  const s = normalize(status);
+
+  if (s.includes('available')) return 'available';
+  if (s.includes('claimed') || s.includes('follow')) return 'claimed';
+  if (s.includes('committed')) return 'committed';
+  if (s.includes('purchased') || s.includes('sold')) return 'purchased';
+  if (s.includes('declined') || s.includes('do not contact')) return 'declined';
+
+  return 'other';
+}
 
   function render() {
     const query = normalize(input.value);
