@@ -267,10 +267,15 @@ header nav a.active:hover {
 /* ---------- Resources Page ---------- */
 
 .resource-grid {
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
 }
 
 .resource-card {
+  flex: 0 1 340px;
+  max-width: 340px;
   display: block;
   color: inherit;
   text-decoration: none;
@@ -295,15 +300,9 @@ header nav a.active:hover {
   color: var(--muted);
 }
 
-/* Keep the Resources grid responsive */
-@media (max-width: 900px) {
-  .resource-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .resource-grid {
-    grid-template-columns: 1fr;
+@media (max-width: 700px) {
+  .resource-card {
+    flex: 1 1 100%;
+    max-width: 100%;
   }
 }
