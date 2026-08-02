@@ -13,8 +13,8 @@ window.WOHS_CONFIG = {
   trackerCsvUrl: "",
 
   claimFormUrl: "https://docs.google.com/forms/d/e/1FAIpQLSe6Mwl8awzsPveYzsYJV7ZaPNOU4cKWbaickwwKOkgSCxsPJQ/viewform?usp=dialog",
-  updateFormUrl: "PASTE_YOUR_UPDATE_FORM_LINK_HERE",
-  submitSaleFormUrl: "PASTE_YOUR_SALE_FORM_LINK_HERE",
+  updateFormUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfI3zBmSRKoKA8hVab8S-4smNS7AAdIL9iy-q2IssL3GFdY3Q/viewform",
+  submitSaleFormUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfI3zBmSRKoKA8hVab8S-4smNS7AAdIL9iy-q2IssL3GFdY3Q/viewform",
   sponsorshipPacketUrl: "PASTE_YOUR_SPONSORSHIP_PACKET_LINK_HERE",
   artworkUploadUrl: "PASTE_YOUR_ARTWORK_UPLOAD_LINK_HERE",
 
