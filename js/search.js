@@ -79,7 +79,8 @@
     if (!filtered.length) {
       results.innerHTML = '';
       message.hidden = false;
-      message.innerHTML = `<strong>No matches found.</strong><span>Try fewer letters, a different spelling, or another location.</span>`;
+      message.innerHTML = `<strong>No matches found.</strong><span>Try a different spelling, fewer letters, or another location.
+<strong>If you still don't find the business, submit a new claim to add it to the list.</strong></span>`;
       return;
     }
 
