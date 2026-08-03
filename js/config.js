@@ -20,6 +20,6 @@ window.WOHS_CONFIG = {
 
   claimLengthDays: 5,
   claimDeadline: "August 28, 2026",
-  salesDeadline: "September 4, 2026",
-  artworkDeadline: "September 4, 2026"
+  salesDeadline: "September 8, 2026",
+  artworkDeadline: "September 8, 2026"
 };
