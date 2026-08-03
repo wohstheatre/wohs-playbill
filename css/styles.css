@@ -7,7 +7,7 @@
         radial-gradient(circle at 80% 15%, rgba(245,130,32,.34), transparent 28%),
         linear-gradient(135deg, var(--blue-dark), var(--blue));
     color:white;
-    padding:78px 0 58px;
+    padding:78px 0 90px;
 }.hero::after{
     content:"";
     position:absolute;
