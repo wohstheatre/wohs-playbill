@@ -356,3 +356,25 @@ header nav a.active:hover {
     line-height:1.5;
     backdrop-filter:blur(4px);
 }
+.price-card.sold {
+    position: relative;
+    opacity: .8;
+}
+
+.sold-badge {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+
+    background: #2e7d32;
+    color: white;
+
+    padding: 4px 10px;
+
+    border-radius: 999px;
+
+    font-size: .75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+}
