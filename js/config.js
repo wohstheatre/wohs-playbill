@@ -14,6 +14,7 @@ window.WOHS_CONFIG = {
 
   claimFormUrl: "https://docs.google.com/forms/d/e/1FAIpQLSe6Mwl8awzsPveYzsYJV7ZaPNOU4cKWbaickwwKOkgSCxsPJQ/viewform?usp=dialog",
   updateFormUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfI3zBmSRKoKA8hVab8S-4smNS7AAdIL9iy-q2IssL3GFdY3Q/viewform?usp=dialog",
+  familyShoutOutFormUrl: "https://docs.google.com/forms/d/e/1FAIpQLSdrMZOZVG7qfSUGpWv_ORefNYBgZcf7a6o5UBzj-j_mFaVoFQ/viewform?usp=dialog",
   submitSaleFormUrl: "PASTE_YOUR_SALE_FORM_LINK_HERE",
   sponsorshipPacketUrl: "West-Orange-High-Theatre-Sponsorship-Guide.pdf",
   artworkUploadUrl: "PASTE_YOUR_ARTWORK_UPLOAD_LINK_HERE",
